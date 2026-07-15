@@ -23,7 +23,7 @@ test.describe("Test Scenario of Adding One Employee", ()=>
     {
         test.setTimeout(900000);
        
-        const jsonData  = JSON.parse(fsdata.readFileSync("./Datajson/locator.json"));
+        const jsonData  = JSON.parse(fsdata.readFileSync("./Datajson/locator.json", "utf-8"));
          function readExcel(filepath : string , sheetName : string) : any
         {
             const wb = myexcel.readFile(filepath);
